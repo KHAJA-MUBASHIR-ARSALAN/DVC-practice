@@ -10,6 +10,12 @@ data = {
 
 df = pd.DataFrame(data)
 
+
+# adding new row to check dvc is tracking or not
+
+new_row = {'Name':'nashu','Age':20,'city':'city'}
+df.loc[len(df.index)] = new_row
+
 # ensuring data directory shouldn't available at root level
 
 data_dir = 'data'
