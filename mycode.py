@@ -16,6 +16,10 @@ df = pd.DataFrame(data)
 new_row = {'Name':'nashu','Age':20,'city':'city'}
 df.loc[len(df.index)] = new_row
 
+# adding new row
+new_row = {'Name':'nasiha','Age':30,'city':'city'}
+df.loc[len(df.index)] = new_row
+
 # ensuring data directory shouldn't available at root level
 
 data_dir = 'data'
